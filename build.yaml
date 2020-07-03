@@ -1,0 +1,15 @@
+targets:
+  $default:
+    builders:
+      copy:
+        enabled: true
+
+builders:
+  copy_generator:
+    target: ":copy"
+    import: "package:copy/copy.dart"
+    builder_factories: ["copyWith"]
+    build_extensions: {".dart": ["copy.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
