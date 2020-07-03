@@ -1,5 +1,5 @@
-class Copy {
-  const Copy();
+class Copyable {
+  const Copyable();
 }
 
 class Value<T> {

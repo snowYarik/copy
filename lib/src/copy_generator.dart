@@ -7,7 +7,7 @@ import 'package:source_gen/source_gen.dart'
 import 'copy.dart';
 
 /// A `Generator` for `package:build_runner`
-class CopyWithGenerator extends GeneratorForAnnotation<Copy> {
+class CopyWithGenerator extends GeneratorForAnnotation<Copyable> {
   @override
   String generateForAnnotatedElement(
     Element element,

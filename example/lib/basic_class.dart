@@ -1,13 +1,17 @@
-import 'package:meta/meta.dart' show immutable;
 import 'package:copy/copy.dart';
-//Don't work without it!
+
 part 'basic_class.g.dart';
 
-@immutable
-@Copy()
-class BasicClass {
+@Copyable()
+class BasicClass extends A {
   final String name;
   final int age;
 
-  BasicClass({this.name, this.age});
+  const BasicClass({this.name, this.age, int height}) : super(height: height);
+}
+
+class A {
+  const A({this.height});
+
+  final int height;
 }
