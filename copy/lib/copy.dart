@@ -1,3 +1,5 @@
+library copy;
+
 class Copyable {
   const Copyable();
 }

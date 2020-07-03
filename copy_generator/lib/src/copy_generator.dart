@@ -1,10 +1,9 @@
 import 'package:analyzer/dart/element/element.dart'
     show ClassElement, Element, ParameterElement, ConstructorElement;
 import 'package:build/build.dart' show BuildStep;
+import 'package:copy/copy.dart';
 import 'package:source_gen/source_gen.dart'
     show GeneratorForAnnotation, ConstantReader;
-
-import 'copy.dart';
 
 /// A `Generator` for `package:build_runner`
 class CopyWithGenerator extends GeneratorForAnnotation<Copyable> {
