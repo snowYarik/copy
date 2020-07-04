@@ -9,3 +9,9 @@ class Value<T> {
 
   final T value;
 }
+
+extension ValueExtension<T> on T {
+  Value<T> get value {
+    return Value(this);
+  }
+}
