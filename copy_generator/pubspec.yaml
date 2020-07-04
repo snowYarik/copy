@@ -1,5 +1,5 @@
 name: copy_generator
-version: 0.1.3
+version: 0.1.3+1
 authors:
   - tbm98 <tbm98.dev@gmail.com>
 description: Automatically generating `copyWith` extensions code for classes with `@Copyable()` annotation.
