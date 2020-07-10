@@ -1,3 +1,5 @@
+[![pub package](https://img.shields.io/pub/v/copy.svg)](https://pub.dartlang.org/packages/copy)
+
 * Automatically generating `copyWith` extensions code for classes with `@Copyable()` annotation.
 This package supports `copyWith` with a null value.
 
