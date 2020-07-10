@@ -4,7 +4,7 @@
 This package supports `copyWith` with a null value.
 
 ## For example
-```
+```dart
 //2 lines below are required
 import 'package:copy/copy.dart'; // required
 export 'package:copy/copy.dart'; // if you want to use ValueExtension
@@ -23,7 +23,7 @@ class BasicClass {
 
 ## Install
 
-```
+```dart
 dependencies:
   flutter:
     sdk: flutter
@@ -49,7 +49,7 @@ dev_dependencies:
 
 ## Use
 
-```
+```dart
 BasicClass basic = BasicClass(name: 'name',age: 18);
 basic = basic.copyWith(name: 'new name'.value);  // .value is Extension in ValueExtension
 // basic should be ('new name',18)
